@@ -1,0 +1,31 @@
+.thanks__content {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.thanks__heading-front {
+    display: inline-block;
+    position: absolute;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #805428;
+}
+
+.thanks__heading-back {
+    position: absolute;
+    display: inline-block;
+    font-size: 70px;
+    font-weight: bold;
+    color: #f5deb3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.thanks__button {
+    background: #805428;
+    color: #fff;
+}

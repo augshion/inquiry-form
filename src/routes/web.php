@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\InquiryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [InquiryController::class, 'index']);
+Route::post('/contacts/confirm', [InquiryController::class, 'confirm']);
+Route::post('/contacts', [InquiryController::class, 'store']);
